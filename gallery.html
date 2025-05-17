@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo Gallery</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      padding: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3c72;
+      margin-bottom: 40px;
+    }
+
+    .gallery-img {
+      width: 100%;
+
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.2s;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.03);
+    }
+
+    .navbar {
+      margin-bottom: 40px;
+    }
+    
+    .topnav {
+            display: flex;
+            background-color: #d8cce7;
+            padding: 0 10px;
+            align-items: center;
+        }
+
+        .topnav a {
+            padding: 16px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #5c4d1f;
+            transition: all 0.3s ease;
+        }
+
+        .topnav a:hover {
+            background-color: #888;
+            color: white;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+  </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a href="portfolio.html">Home</a>
+        <a href="portfolio.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a class="active" href="contactme.html">Contact Me</a>
+        <a href="mywork.html">My Work</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+  <div class="container">
+    <h2>My Photo Gallery</h2>
+
+    
+      <!-- Image 1 -->
+        <img src="My best picture.png" alt="Photo 1" class="gallery-img">
+        <h2>This is the best picture of my self </h2>
+     
+
+      <!-- Image 2 -->
+        <img src="My picture in Gasfield.png" alt="Photo 2" class="gallery-img">
+        <h2>In the Bakhrabad Gas Field Office in Cumilla </h2>
+    
+
+      <!-- Image 3 -->
+      
+        <img src="My first science project.png" alt="Photo 3" class="gallery-img">
+        <h2>My First 'Science Fair' with my friends</h2>
+
+        <!-- Image 4 -->
+      
+        <img src="My picture in wood.png" alt="Photo 4" class="gallery-img">
+        <h2>In the Wood</h2>
+
+        
+  </div>
+
+</body>
+</html>
